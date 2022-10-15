@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="eyes.js"></script>
+    
+</head>
+<body>
+    <ul>
+        <li class="left">
+            <div class="outer">
+                <img id="morty" onclick="javascript:tripping()" src="morty.png">
+                <div id="eyes">
+                    <img class="eye" id="eye1" src="eye.png" style="top: -523px;right: -150px;" >
+                    <img class="eye" id="eye2" src="eye.png" style="top: -523px;right: -96px;">
+                </div>
+            </div> 
+        </li>
+        <li class="mid">            
+            <canvas id="canvas" width="800" height="600"></canvas>
+        </li>
+        <li class="right">
+            <div class="outer">
+                <img id="rick" class="rick_img" onclick="javascript:tripping()" src="rick.png" style="width: 65%;" >
+                <div id="eyes">
+                    <img class="eye" id="eye3" src="eye.png" style="top: -530px;right: -200px;">
+                    <img class="eye" id="eye4" src="eye.png" style="top: -540px;right: -250px;">
+                </div>
+            </div>
+        </li>
+      </ul>
+      <script>
+        var canvas = document.getElementById("canvas")
+            var context = canvas.getContext("2d")
+            var playerX = 0;
+            var playerY = 0;
+            var playerSize = 25;
+
+            function init(){
+
+            }
+            function loop(){
+                update()
+                render()
+            }
+            function update(){
+
+            }
+            function render(){
+                context.fillRect(0,0,50,50);
+            }
+            window.setInterval(loop,1000/60)
+      </script>
+</body>
+</html>
