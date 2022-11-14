@@ -1,15 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rick</title>
-  <script src="test.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Főoldal</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/index.js"></script>
 </head>
 <body>
-  <canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;"></canvas>
+    <div class="logout">
+        <a href="login.html" class="logout_txt">Kijelentkezés</a>
+    </div>
+    
+    <section class="hidden"> 
+        <div class="card">
+            <h1>WELCOME</h1>
+            <p>Nyeste Ágoston weboldala</p>
+        </div>        
+    </section>
 
- 
+    <section class="hidden">
+        <div class="card">
+            <h2>Játékok</h1>
+            <div>  
+                <a href="game.html"><img class="background" src="img/rock.png"></a>                        
+                <a href="hangman.html"><img class="background" src="img/hangman.png"></a>                
+            </div>
+        </div>        
+    </section>
+
+    <section class="hidden">
+        <div class="card">
+            <h2>Válaszd ki a háttér kombinációt!</h2>            
+            <input type="color" href="game.html" id="color1"><br>
+            <input type="color" id="color2"><br>  
+            <div>
+                <p class="original_p">Eredeti visszaállítása: </p>
+                <input class="original_i" id="original" type="checkbox">  
+            </div>    
+            <button id="bg_color" onclick="bg_color()">OK</button>                                     
+        </div>        
+    </section>
 </body>
 </html>

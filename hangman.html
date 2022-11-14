@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="css/hangman.css">
+    <script defer src="js/hangman.js"></script>
+</head>
+<body>
+    <a href="index.html"><img class="X" src="img/X.png"></a>
+    <div class="card">
+        <canvas class="game" width="800" height="500" id="canvas"></canvas>        
+        <p id="solution"></p>
+        <input type="text" id="word" maxlength="1">
+        <button id="input_btn" onclick="new_letter()">Mehet</button>
+    </div>
+    
+</body>
+</html>
